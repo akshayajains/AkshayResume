@@ -69,7 +69,7 @@ const ExperienceSection = () => {
             <div className="sticky top-24 space-y-2">
               {experiences.map((exp, index) => <button key={index} onClick={() => setActiveIndex(index)} className={`w-full text-left p-4 rounded-xl transition-all duration-300 group ${activeIndex === index ? "bg-primary text-primary-foreground shadow-glow" : "bg-card hover:bg-secondary border border-border"}`}>
                   <div className="flex items-center gap-3">
-                    <Building2 className={`w-5 h-5 ${activeIndex === index ? "" : "text-primary"}`} />
+                    <Building2 className={`w-5 h-5 ${activeIndex === index ? "" : "text-foreground "}`} />
                     <div>
                       <p className="font-semibold">{exp.company}</p>
                       <p className={`text-sm ${activeIndex === index ? "text-primary-foreground/80" : "text-muted-foreground"}`}>
